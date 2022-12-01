@@ -114,6 +114,8 @@ class MyGame extends Phaser.Scene {
             this.physics.pause()
             this.player.setTint(0xff000)
             this.player.anims.play("turn")
+            alert(`You DIED! Score: ` + score);
+            location.reload()
         }
 
         //SCORE TEXT
